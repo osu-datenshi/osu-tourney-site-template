@@ -75,10 +75,11 @@ class TeamsView(ListView):
         teams = self.model.objects.all()
         output = []
         for team in teams:
-            user_a, user_b = team.user_set.all()
+            user_a, user_b, user_c = team.user_set.all()
             d = model_to_dict(team)
             d["player_a"] = user_a
             d["player_b"] = user_b
+            d["player_c"] = user_c
             output.append(d)
         return output
 
