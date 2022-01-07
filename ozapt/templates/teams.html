@@ -35,6 +35,16 @@
                                          src="{{ team.player_b.avatar_url }}"/>
                                 </span>
                             </a>
+                            <a target="_blank" href="{{ team.player_c.profile_url }}">
+                                <span class="player-avatar">
+                                    <img alt="{{ team.player_c.username }}'s avatar"
+                                         title="{{ team.player_c.username }}'s avatar"
+                                         src="{{ team.player_c.avatar_url }}"/>
+                                </span>
+                                <span class="player-name mr">
+                                    {{ team.player_c.username }}
+                                </span>
+                            </a>
                         </div>
                     </li>
 
